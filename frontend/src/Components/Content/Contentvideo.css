@@ -1,0 +1,10 @@
+/* contentvideo */
+.product_video{
+    display: flex;
+    justify-content: center;
+}
+
+.product_video-item{
+    width: 62%;
+    margin: 2px 0 0 0;
+}

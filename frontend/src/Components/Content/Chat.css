@@ -1,0 +1,133 @@
+
+.chat-item {
+    width: 50%;
+    background-color: rgb(239, 239, 237);
+    border-radius: 20px;
+}
+.your-message {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    float: left;
+}
+
+.other-people {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    text-align: left;
+    float: right;
+}
+
+.box-chat_message {
+    min-height: 50vh;  
+    max-height: 50vh;
+    overflow-y: auto;
+    border-radius: 10px;
+
+}
+.box-chat {
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 1em;
+}
+
+.send-box {
+    position: fixed;
+    width: 48%;
+    padding: 1em;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 80%;
+    margin: 0;
+    padding: 0.5em;
+    background: #ebf5ff;
+    border-radius: 2em; 
+    display: flex;
+    float: left;
+}
+.chat_send {
+    width: 10%;
+    background: #6650ff;
+    color: white;
+    margin-left: 2px;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    padding: 1em;
+    text-align: center;
+
+}
+  
+.chat{
+    height: 60%;
+    width: 50%;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #fff;
+    border: solid #333;
+}
+.chat_user{
+    color: #333;
+    border-radius: 2px;
+}
+.chat_your{
+    background: #5dbbf9;
+    border-radius: 2px;
+}
+.chat_other{
+    background: #868686;
+    border-radius: 2px;
+}
+.chat_delete{
+    background-color: #fec89d;
+    padding: 0 20px 0 20px;
+    color: red;
+    border-radius: 2px;
+}
+.chat_nodelete{
+    display: none;
+}
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    textarea{
+        width: 70%;
+    }
+    .chat{
+        width: 100%;
+        top: 30%;
+        height: 60%;
+    }
+    .box-chat_message {
+        min-height: 50vh;  
+        max-height: 50vh;  
+    }
+    .send-box {
+        width: 95%;
+    }
+    .chat_send{
+        width: 15%;
+    }
+
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .chat{
+        width: 50%;
+        top: 300px;
+        height: 55%;
+    }
+    .box-chat_message {
+       min-height: 43vh;
+       max-height: 43vh;
+    }
+    .send-box {
+        width: 45%;
+    }
+}

@@ -1,0 +1,77 @@
+.admin{
+    width: 100%;
+    height: 100%;
+
+}
+.admin_table{
+    margin: auto;
+    width: 80%;
+}
+.admin_title{
+    font-size: 2rem;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: #33ff00;
+}
+.admin_button{
+    width: 100%;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+.admin_y{
+    display: flex;
+    justify-content: center;
+    background-color: #33ff00;
+    width: 100px;
+    border-radius: 5px;
+}
+.admin_n{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    width: 100px;
+    border-radius: 5px;
+}
+.admin_notice{
+    left: 25%;
+    top: 200px;
+    width: 50%;
+    height: 25%;
+    position: fixed;
+    background-color: azure;
+    border: solid #b8b8b8;
+}
+.admin_lb{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+.admin_notice-item{
+    display: flex;
+    justify-content: center;
+}
+.admin_title1{
+    color: red;
+    text-decoration: none;
+    font-size: 2rem;
+}
+/* responsive
+/* Mobile: width < 740px = 46.1875em */
+@media (max-width: 46.1875em) {
+    .admin_notice{
+        left: 0;
+        top: 200px;
+        width: 100%;
+        height: 25%;
+
+    }
+}
+/* Tablet: width >= 740px and width <1024px  */
+@media (min-width: 46.25em) and (max-width: 63.9375em){   
+    .admin_notice{
+        width: 50%;
+        height: 20%;
+    }
+}
