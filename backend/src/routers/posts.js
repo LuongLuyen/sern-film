@@ -2,31 +2,31 @@ const { Router } = require("express")
 const homeController = require("../controllers/homeController")
 const router = require("express").Router()
 
-router.get('/', (req,res)=>{
+router.get('/', (req, res) => {
 	res.send(`server is running on port 5000`)
 })
 
-//    http://localhost:5000/api/posts/film
-router.get('/film', homeController.getCRUDAllFilm)
-//    http://localhost:5000/api/posts/user
-router.get('/user', homeController.getCRUDAllUser)
-//    http://localhost:5000/api/posts/msg
-router.get('/msg', homeController.getCRUDAllMsg)
+//    http://localhost:5000/all-film
+router.get('/all-film', homeController.getCRUDAllFilm)
+//    http://localhost:5000/all-user
+router.get('/all-user', homeController.getCRUDAllUser)
+//    http://localhost:5000/all-chat
+router.get('/all-chat', homeController.getCRUDAllChat)
 
 
-//    http://localhost:5000/api/posts/register
+//    http://localhost:5000/register
 router.post('/register', homeController.postCRUDNewUser)
-//    http://localhost:5000/api/posts/login
+//    http://localhost:5000/login
 router.post('/login', homeController.postCRUDLoginUser)
-//    http://localhost:5000/api/posts/add
-router.post('/add',homeController.postCRUDNewFilm)
+//    http://localhost:5000/create-film
+router.post('/create-film', homeController.postCRUDNewFilm)
 //    Route này Xử lý khi client thực hiện hành động upload file
-//    http://localhost:5000/api/posts/upload
-router.post("/upload",homeController.postVideo)
+//    http://localhost:5000/upload
+router.post("/upload", homeController.postVideo)
 
-//    http://localhost:5000/api/posts/delete-user/:username
-router.delete("/delete-user/:username",homeController.deleteCRUDUser)
-//    http://localhost:5000/api/posts/delete-mes/:id
-router.delete("/delete-mes/:id",homeController.deleteCRUDMes)
+//    http://localhost:5000/delete-user/:username
+router.delete("/delete-user/:username", homeController.deleteCRUDUser)
+//    http://localhost:5000/delete-chat/:key
+router.delete("/delete-chat/:key", homeController.deleteCRUDChat)
 
-module.exports= router
+module.exports = router
